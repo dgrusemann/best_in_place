@@ -33,6 +33,7 @@ module BestInPlace
       pass_through_html_options(opts, options)
 
       options[:data]['bip-activator'] = opts[:activator].presence
+      options[:data]['bip-activator-event'] = opts[:activator_event].presence
 
       options[:data]['bip-html-attrs'] = opts[:html_attrs].to_json unless opts[:html_attrs].blank?
       options[:data]['bip-inner-class'] = opts[:inner_class].presence
